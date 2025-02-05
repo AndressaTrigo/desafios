@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor</title>
+    <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: #f8e6e6;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100em;
+            margin: 40px;
+            
+        }
+        .container{
+        
+            text-align: center;
+            background-color:white;
+            padding: 100px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px black;
+            min-width:200px;
+            max-width:800px;
+            margin:auto;
+        }
+        
+        h1{
+            color: #333;
+            font-size: 2em;
+            font-family:handwriting;
+        
+        
+        }
+        p{
+        font-family:handwriting; ;
+            font-size: 2em;
+            margin: 20px
+        
+        }
+        button{
+            background-color: #e91e63;
+            color: white;
+            font-size: 1.2em;
+            border:none;
+            padding: 10px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition:backgroud-color 0.2s;
+        }
+        button:hover{
+            background-color:palevioletred ;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        
+        <h1 id="titulo"> Perdi o juízo. Você é a culpada &#x1F496</h1>
+        <p id="mensagem">&#x1F48C</p>
+        <button onclick="trocarMensagem()">Clique aqui</button>
+    </div>
+
+<script>
+    function trocarMensagem() {
+        const mensagens = [
+    
+            "  Você é íncrivel.",
+    
+            "  Você é maravihosa.",
+    
+            " Seu sorriso e perfeito.",
+    
+            "Admiro tudo em você.",
+
+            " Você merece o mundo.",
+
+            "Te amo.",
+    
+    
+        ];
+        const randomindex= Math.floor(Math.random() *
+        mensagens.length);
+    
+        document.getElementById('mensagem').innerText=mensagens[randomindex];
+    }
+    alert('Me despulpe se isso for muito boiola  kkkkkkk')
+</script>
+</body>
+</html>
